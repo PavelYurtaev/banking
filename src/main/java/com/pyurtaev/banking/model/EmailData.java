@@ -31,6 +31,6 @@ public class EmailData {
     @NotNull
     @Size(max = 200)
     @Column(length = 200, unique = true, nullable = false)
-    @Email(regexp = "^(.+)@(\\S+)$") // the same at dto
+    @Email(regexp = "^(.+)@(\\S+)$")
     private String email;
 }
