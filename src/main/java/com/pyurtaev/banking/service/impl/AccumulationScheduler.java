@@ -25,7 +25,7 @@ public class AccumulationScheduler {
 
     public void registerUserLimit(final Long userId, final BigDecimal value) {
         final BigDecimal percent207Limit = value.add(
-                value.multiply(BigDecimal.TEN).divide(BigDecimal.valueOf(100), 2, RoundingMode.HALF_UP));
+                value.multiply(BigDecimal.valueOf(207)).divide(BigDecimal.valueOf(100), 2, RoundingMode.HALF_UP));
         balanceAutoIncreaseLimits.put(userId, percent207Limit);
     }
 }
